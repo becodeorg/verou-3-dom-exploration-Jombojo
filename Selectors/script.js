@@ -1,3 +1,7 @@
+function generateRandomColor()
+{
+    var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+    return randomColor;}
 //Add a title attribute to every element that has the important class, stating This is an important item
 // var x = document.querySelectorAll(".important");
 // var i;
@@ -16,10 +20,20 @@
     
 // }
 //Loop through all the paragraphs and display their content in the console. If the paragraph has a class, display its classname has well
-var pLijst = document.querySelectorAll("p");
-for (i=0;i<pLijst.length;i++){
-    console.log(pLijst[i].innerHTML);
-    if (pLijst[i].querySelectorAll(".class")){
-        console.log(pLijst[i].className);
-    }
+// var pLijst = document.querySelectorAll("p");
+// for (i=0;i<pLijst.length;i++){
+//     console.log(pLijst[i].innerHTML);
+//     if (pLijst[i].querySelectorAll(".class")){
+//         console.log(pLijst[i].className);
+//     }
+// }
+
+//Give each of the paragraph a random text color (different for each one) UNLESS it has a class then leave it as it is.
+var pLijst2 = document.querySelectorAll("p");
+for (i = 0; i < pLijst2.length; i++) {
+    if (pLijst2[i].className) {
+        console.log("werkt niet");
+    } else {
+        pLijst2[i].style.color = generateRandomColor();
+    } 
 }
