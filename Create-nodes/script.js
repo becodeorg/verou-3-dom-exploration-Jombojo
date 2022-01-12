@@ -1,3 +1,9 @@
+/*get all learners
+create a section with paragraph
+create article
+generate random background color
+for loop that appends section to article*/
+
 const learners =["Ahmad", "Jian", "Dante", "Muhammet", "Nicolas", "Beryl", "Cynthia", "Ruben", "Magali", "Jawid", "Koen","Kevin", "Benjamin", "Collin", "Michael", "Ellen", "Michelle", "Dery", "Jordy", "Pieter","Sarah"];
 const article = document.createElement("article");
 document.body.appendChild(article);
